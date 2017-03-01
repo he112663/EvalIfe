@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html><!--根标签-->
+<head>
+	<meta charset="utf8" />
+	<title></title>
+	<link rel>
+	<style type="text/css">
+		.nav ul > li{
+			float:left;
+			width:100px;
+		}
+		.nav ul li:first-child{
+			font-weight:bold;
+		}
+		.nav ul ul{
+			display:none;
+		}
+		.nav ul li:hover ul{
+			display:block;
+		}
+		
+		.clear{clear:both;}
+		h1{
+			font-size:1.6em;
+			line-height:2em;
+		}
+		h2{
+			font-size:1.2em;
+			line-height:1.6em;
+			color:#333;
+		}
+		span{
+			color:#888;
+		}
+		p{text-indent:2em;}
+		img{
+			border:none;
+			vertical-align:middle;
+		}
+		a{
+			color:rgb(48,66,235);
+		}
+		.ifeUl{
+			list-style:none;
+		}
+	</style>
+</head>
+<body>
+<!--CSS导航-->
+	<nav class="nav">
+		<ul>
+			<li>导航1</li>
+			<li>导航2
+				<ul>
+					<li>导航2-1</li>
+					<li>导航2-1</li>
+					<li>导航2-1</li>
+				</ul>
+			</li>
+			<li>导航3</li>
+			<li>导航4</li>
+			<li>导航5</li>
+			<li>导航6</li>
+		</ul>
+	</nav>
+	
+	<h1 class="clear">一级标题</h1>
+	<h2>二级标题</h2>
+	<span>文章作者</span>
+	<p>
+		百度IFE前端学院百度IFE前端学院<a href="http://ife.baidu.com" target="_blank">百度IFE前端学院</a>百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院百度IFE前端学院
+	</p>
+	<img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" alt=""/>
+	<ul class="ifeUl">
+		<li><img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" alt=""/></li>
+		<li><img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" alt=""/></li>
+		<li><img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" alt=""/></li>
+		<li><img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" alt=""/></li>
+	</ul>
+<h1>双标签</h1>
+	<p>&lt;P&gt;标签：文章段落标签</p>
+	<h1>标题标签&lt;H1&gt;</h1>
+	<h2>标题标签&lt;H2&gt;</h2>
+	<h3>标题标签&lt;H3&gt;</h3>
+	<h4>标题标签&lt;H4&gt;</h4>
+	<h5>标题标签&lt;H5&gt;</h5>
+	<h6>标题标签&lt;H6&gt;</h6>
+	<strong>&lt;strong&gt;文本加粗(行内)</strong><br/>
+	<em>&lt;em&gt;倾斜(行内)</em><br/>
+	<span>&lt;span&gt;无语义标签(行内)</span><br/>
+	<q>&lt;q&gt;短文本引用(行内)</q>
+	<blockquote>&lt;blockquote&gt;长文本引用</blockquote>
+	<address>&lt;address&gt;为网页加入地址信息</address>
+	<code>&lt;code&gt;插入一行计算机代码</code>
+	<pre>&lt;pre&gt;预格式化文本</pre>
+	<ul>
+		<li>&lt;ul&gt;无符号列表</li>
+	</ul>
+	<ol>
+		<li>&lt;ol&gt;有符号列表</li>
+	</ol>
+	<div>&lt;div&gt;无语义标签</div>
+	<table summary="表格摘要">
+		<tbody><!--当表格内容非常多时，表格会下载一点显示一点，但如果加上<tbody>标签后，这个表格就要等表格内容全部下载完才会显示。-->
+			<caption>&lt;caption&gt;表格标题</caption>
+			<th>&lt;table&gt;表格标签</th>
+			<tr>
+				<td>&lt;tbody&gt;表格下载完才显示</td>
+				<td>&lt;th&gt;表头</td>
+				<td>&lt;tr&gt;行</td>
+				<td>&lt;td&gt;列</td>
+			</tr>
+		</tbody>
+	</table>
+	<a href="#" title="链接标签">&lt;a&gt;链接标签</a>
+	<form method="index.html" action="post">
+		  账号：<input type="text" name="name" value="ID" /><br/>
+		  密码：<input type="password" name="password" value="password" /><br/>
+		  留言内容：<textarea cols="50" rows="10">
+			留言内容
+		  </textarea><br/>
+		  性别：
+		  男<input type="radio" value="男" name="gender"/>
+		  女<input type="radio" value="女" name="gender"/><br/>
+		  多选:
+		  <input type="checkbox" value="选项1" name="checkbox1" />选项1
+		  <input type="checkbox" value="选项2" name="checkbox2" />选项2
+		  <input type="checkbox" value="选项3" name="checkbox3" />选项3<br/>
+		  下拉列表框：
+		  <select multiple="multiple">
+			<option value="选项1">选项1</option>
+			<option value="选项2" selected="selected">选项2</option>
+			<option value="选项3">选项3</option>
+		  </select><br/>
+		  <input type="submit" value="提交按钮"/>
+		  <input type="reset" value="重置按钮">
+		  <label for="控件id名称">&lt;label&gt;为鼠标用户改进可用性</label><br/>
+		  搜索框：
+		  <input type="search" value="搜索" /><br/>
+		  电话号码输入控件：
+		  <input type="tel" /><br/>
+		  URL输入控件：
+		  <input type="url" /><br/>
+		  Email邮件地址：
+		  <input type="email" /><br/>
+	</form>
+<h1>单标签</h1>
+	&lt;br/&gt;换行标签<br/>
+	&lt;hr/&gt;添加水平线<hr/>
+	&lt;img/&gt;插入图片<hr/>
+	
+
+</body>
+</html>
